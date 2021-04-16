@@ -1,0 +1,19 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <h3>This is Slame, the Internets's worst place to buy used retro games.</h3>
+    <h5><a class="nav-link text-dark" asp-page="/Games/Index">Shop is here</a></h5>
+    <h5><a class="nav-link text-dark" asp-page="/Games/Create">Sell something here</a></h5>
+    <div><span>⬇ Shop by console ⬇</span>
+    <nav style="display: flex;">
+        <a href="/Games/Index?GameConsole=XBox"><img src="~/resources/xbox1.jpeg" alt="X Box" /></a>
+        <a href="/Games/Index?GameConsole=SNES"><img src="~/resources/snes.jpg" alt="SNES" /></a>
+        <a href="/Games/Index?GameConsole=PlayStation"><img src="~/resources/ps1.jpg" alt="Play Station" /></a>
+    </nav>
+    </div>
+</div>
