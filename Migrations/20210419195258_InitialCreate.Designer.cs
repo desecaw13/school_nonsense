@@ -9,8 +9,8 @@ using store.Data;
 namespace store.Migrations
 {
     [DbContext(typeof(storeContext))]
-    [Migration("20210415213025_New_DataAnnotations")]
-    partial class New_DataAnnotations
+    [Migration("20210419195258_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

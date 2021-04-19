@@ -6,6 +6,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20210414212509_InitalCreate.cs" />
+    <Compile Remove="Migrations\20210414212509_InitalCreate.Designer.cs" />
+    <Compile Remove="Migrations\20210415193839_AddedConsoleType.cs" />
+    <Compile Remove="Migrations\20210415193839_AddedConsoleType.Designer.cs" />
+    <Compile Remove="Migrations\20210415213025_New_DataAnnotations.cs" />
+    <Compile Remove="Migrations\20210415213025_New_DataAnnotations.Designer.cs" />
+    <Compile Remove="Migrations\20210419194806_Reinitial.cs" />
+    <Compile Remove="Migrations\20210419194806_Reinitial.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.12" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.13" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.13">

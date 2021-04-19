@@ -2,7 +2,7 @@
 
 namespace store.Migrations
 {
-    public partial class AddedConsoleType : Migration
+    public partial class InitialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -12,10 +12,10 @@ namespace store.Migrations
                 {
                     ID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Title = table.Column<string>(nullable: true),
-                    Console = table.Column<string>(nullable: true),
-                    Genre = table.Column<string>(nullable: true),
-                    Price = table.Column<decimal>(nullable: false)
+                    Title = table.Column<string>(maxLength: 60, nullable: false),
+                    Console = table.Column<string>(maxLength: 30, nullable: false),
+                    Genre = table.Column<string>(maxLength: 30, nullable: false),
+                    Price = table.Column<decimal>(type: "decimal(18, 2)", nullable: false)
                 },
                 constraints: table =>
                 {
