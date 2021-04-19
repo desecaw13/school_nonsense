@@ -1,26 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using store.Data;
 using store.Models;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace store.Pages.Games
 {
     public class IndexModel : PageModel
     {
-        private readonly store.Data.storeContext _context;
+        private readonly storeContext _context;
 
-        public IndexModel(store.Data.storeContext context)
+        public IndexModel(storeContext context)
         {
             _context = context;
         }
 
-        public IList<Game> Game { get;set; }
+        public IList<Game> Game { get; set; }
 
         [BindProperty(SupportsGet = true)]
         public string SearchString { get; set; }

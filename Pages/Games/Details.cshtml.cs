@@ -1,20 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using store.Data;
 using store.Models;
+using System.Threading.Tasks;
 
 namespace store.Pages.Games
 {
     public class DetailsModel : PageModel
     {
-        private readonly store.Data.storeContext _context;
+        private readonly storeContext _context;
 
-        public DetailsModel(store.Data.storeContext context)
+        public DetailsModel(storeContext context)
         {
             _context = context;
         }

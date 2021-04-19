@@ -1,20 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using store.Data;
 using store.Models;
+using System.Threading.Tasks;
 
 namespace store.Pages.Games
 {
     public class CreateModel : PageModel
     {
-        private readonly store.Data.storeContext _context;
+        private readonly storeContext _context;
 
-        public CreateModel(store.Data.storeContext context)
+        public CreateModel(storeContext context)
         {
             _context = context;
         }
